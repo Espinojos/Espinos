@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <script defer src="script.js"></script>
+  <style>
+    body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #4CAF50; /* Color de fondo verde */
+  padding: 10px;
+  color: #000000;
+}
+
+.logo img {
+  max-width: 100px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+}
+
+nav ul li {
+  margin-right: 20px;
+}
+
+nav ul li a {
+  text-decoration: blueviolet;
+  color: #131010;
+  padding: 10px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+nav ul li a:hover {
+  background-color: #ececec; /* Color de fondo verde más oscuro al pasar el ratón */
+}
+
+.dropdown {
+  position: none;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9; /* Fondo blanco para el menú desplegable */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+  </style>
+  <title>Menú Horizontal</title>
+</head>
+<body>
+
+<header>
+  <div class="logo">
+    <img src="tu_logo.png" alt="Logo">
+  </div>
+  <nav>
+    <ul>
+      <li><a href="#">Inicio</a></li>
+      <li><a href="#">Acerca de</a></li>
+      <li class="dropdown">
+        <a href="#">Servicios</a>
+        <div class="dropdown-content">
+          <a href="#">Servicio 1</a>
+          <a href="#">Servicio 2</a>
+          <a href="#">Servicio 3</a>
+        </div>
+      </li>
+      <li><a href="#">Contacto</a></li>
+    </ul>
+  </nav>
+</header>
+
+</body>
+</html>
